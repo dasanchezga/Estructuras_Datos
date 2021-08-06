@@ -34,7 +34,7 @@ public class DataStructures {
         //Borrar la Lista 
         myList.makeEmpty();
         myList.showList();*/
-        
+        /*
         //******LISTA DOBLE******
         DoubleLinkedList<String> myDouble = new DoubleLinkedList();
         //Insertar Nodos al Principio
@@ -86,6 +86,7 @@ public class DataStructures {
         //Vaciar la lista
         myDouble.makeEmpty();
         myDouble.showList();
+        */
         /*
         //******Stack (Pila)******
         Stack<String> myStack = new Stack();
@@ -149,7 +150,107 @@ public class DataStructures {
         //Vaciar la lista
         myQueue.makeEmpty();
         System.out.println(myQueue.count());    */   
-        
-            
+        /*
+        //*****AVLTree*****
+        AVL<Integer> intAVL = new AVL<>();
+        System.out.println("El árbol está vacío?: " +intAVL.isEmpty());
+	intAVL.insert(10);
+	intAVL.insert(8);
+	intAVL.insert(15);
+	intAVL.insert(9);
+	intAVL.insert(3);
+	intAVL.insert(12); 
+	intAVL.insert(11);
+	intAVL.insert(20);
+        intAVL.insert(18);
+        intAVL.insert(17);
+	System.out.println("PREORDEN:");
+	intAVL.preorder();
+	System.out.println("POSORDEN:");
+	intAVL.posorder();
+	System.out.println("INORDEN:");
+	intAVL.inorder();
+	System.out.println("POR ANCHURA:");
+	intAVL.levels();
+	System.out.println("El árbol está vacío ? " + intAVL.isEmpty());
+	System.out.println("Altura del árbol: " + intAVL.height());
+	System.out.println("El árbol contiene a 3? " + intAVL.contains(3));
+	System.out.println("Máximo en el árbol? " +intAVL.findMax());
+	System.out.println("Mínimo en el árbol? "+intAVL.findMin());
+	intAVL.remove(3);
+	intAVL.remove(20);
+	intAVL.remove(9);
+	System.out.println("POR ANCHURA:");
+	intAVL.levels();
+	intAVL.insert(40);
+	intAVL.insert(1);
+	System.out.println("POR ANCHURA:");
+	intAVL.levels();
+	intAVL.remove(12);
+	System.out.println("POR ANCHURA:");
+	intAVL.levels();
+	System.out.println(intAVL.findMax());
+	System.out.println(intAVL.findMin());
+	System.out.println(intAVL.contains(12));
+	System.out.println(intAVL.contains(20));*/
+        /*
+        //*****Disjoin Sets *****
+        DisjoinSets intNumbers = new DisjoinSets();
+        intNumbers.makeSet(1);
+	intNumbers.makeSet(9);
+	intNumbers.makeSet(3);
+	intNumbers.makeSet(12);
+	intNumbers.makeSet(8);	
+	intNumbers.makeSet(20);
+	intNumbers.makeSet(17);
+	intNumbers.makeSet(18);
+	intNumbers.makeSet(13);
+	intNumbers.makeSet(10);
+	System.out.println(intNumbers.find(20));
+	System.out.println();
+	intNumbers.union(1, 9);
+	intNumbers.union(3, 12);
+	intNumbers.union(8, 20);
+        intNumbers.union(17, 18);
+	intNumbers.union(13, 10);
+	System.out.println(intNumbers.find(1));
+	System.out.println(intNumbers.find(9));
+	intNumbers.union(3, 8);
+	intNumbers.union(17, 10);
+	intNumbers.union(1, 3);
+	intNumbers.union(1, 10);
+	System.out.println();
+	System.out.println(intNumbers.find(20));
+	System.out.println(intNumbers.find(1));
+	System.out.println(intNumbers.find(18));
+	System.out.println(intNumbers.find(8)); 
+        */
+        //****** PriorityQ *****
+        /*
+        BinaryHeap<Integer> priorityQ = new BinaryHeap<>();
+        priorityQ.insert(69);
+	priorityQ.insert(40);
+	priorityQ.insert(10);
+	priorityQ.insert(98);
+	priorityQ.insert(15);
+	priorityQ.insert(9);
+	priorityQ.insert(91);
+	priorityQ.insert(15);
+	priorityQ.insert(38);
+	priorityQ.insert(56);
+	priorityQ.insert(21);
+	priorityQ.insert(80);
+	priorityQ.showHeap();
+	System.out.println(priorityQ.findMin());
+	priorityQ.insert(5);
+	priorityQ.insert(2);
+	priorityQ.showHeap();
+	System.out.println(priorityQ.findMin());
+	priorityQ.deleteMin();
+	priorityQ.showHeap();
+	priorityQ.deleteMin();
+	priorityQ.deleteMin();
+	priorityQ.showHeap();  
+        */
     }
 }

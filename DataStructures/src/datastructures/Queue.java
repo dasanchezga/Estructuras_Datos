@@ -17,11 +17,17 @@ public class Queue<DataType> extends DoubleLinkedList{
     public void enqueue(DataType data){
         this.insertBegin(data);
     }
-    //Desencolar un dato
+    //Desencolar imprimiendo el dato
     public void dequeue(){
         DataType data = (DataType) last.getData();
         this.deleteEnd();
         System.out.println(data);
+    }
+    //Desencolar retornando el dato
+    public DataType push(){
+        DataType data = (DataType) last.getData();
+        this.deleteEnd();
+        return data;
     }
     //Mostrar el dato al frente de la cola
     public DataType peek(){
